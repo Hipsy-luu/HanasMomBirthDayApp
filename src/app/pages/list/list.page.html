@@ -1,27 +1,29 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      List
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Family
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
+    <div class="family-img">
+        <img src="../assets/family.jpeg">
     </div>
-  -->
+    <div class="content">
+        <button class="abrazo" (click)="abrazos()">
+        Abrazo!
+      </button>
+    </div>
+
 </ion-content>
+<ion-footer>
+    <div class="footer">
+        <p>
+            <strong class="orange">
+            <ion-icon name="nutrition"></ion-icon></strong> &nbsp;Bunyzilla Inc.</p>
+    </div>
+</ion-footer>

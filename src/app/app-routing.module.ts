@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'hana',
     loadChildren: () => import('./pages/hana/hana.module').then( m => m.HanaPageModule)
+  },
+  {
+    path: 'test',
+    loadChildren: () => import('./pages/test/test.module').then( m => m.TestPageModule)
   }
 ];
 

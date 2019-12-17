@@ -1,9 +1,49 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>hana</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Coffe Break!
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-  <ion-button (click)="presentAlertMultipleButtons()" >Alerta para flor</ion-button>
+    <ion-card>
+        <ion-card-header class="header">
+            <div class="container">
+                <div class="coffee-header">
+                    <div class="coffee-header__buttons coffee-header__button-one"></div>
+                    <div class="coffee-header__buttons coffee-header__button-two"></div>
+                    <div class="coffee-header__display"></div>
+                    <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                    <div class="coffe-medium__exit"></div>
+                    <div class="coffee-medium__arm"></div>
+                    <div class="coffee-medium__liquid"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                    <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </ion-card-header>
+    </ion-card>
+    <div class="disp-center">
+        <button class="btn-coffe" (click)="presentAlertMultipleButtons()">
+            <ion-icon name="cafe"></ion-icon>&nbsp;Servirse una taza</button>
+    </div>
+
 </ion-content>
+<ion-footer>
+    <div class="footer">
+        <p>
+            <strong class="orange">
+              <ion-icon name="nutrition"></ion-icon></strong> &nbsp;Bunyzilla Inc.</p>
+    </div>
+</ion-footer>

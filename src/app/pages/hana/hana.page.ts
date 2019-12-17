@@ -15,9 +15,8 @@ export class HanaPage implements OnInit {
 
   async presentAlertMultipleButtons() {
     const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
+      header: '¡Cafe servido!',
+      message: 'Fibi se ha servido una taza de cafe n.n .',
       buttons: ['OK']
     });
 
