@@ -1,5 +1,7 @@
 {
   "name": "HanasMomBirtday",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
